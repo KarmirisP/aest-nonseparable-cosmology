@@ -11,6 +11,7 @@ authors:
     orcid: "https://orcid.org/0009-0007-7536-1467"
 
 version: "1.0.2"
+doi: "10.5281/zenodo.22260419"
 date-released: 2026-09-02
 
 repository-code: "https://github.com/KarmirisP/aest-nonseparable-cosmology"

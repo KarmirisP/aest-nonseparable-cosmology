@@ -47,7 +47,7 @@ The GitHub repository contains the exact publication source, compact machine-rea
 
 ## Citation and archival DOI
 
-The exact submission tag should be archived in Zenodo (or an equivalent DOI-bearing service). Add the DOI to `CITATION.cff` and the manuscript Data Availability Statement before submission.
+The exact submission tag should be archived in Zenodo (or an equivalent DOI-bearing service). Archived release DOI: [10.5281/zenodo.22260419](https://doi.org/10.5281/zenodo.22260419).
 
 ## Final configuration and compact regression
 
