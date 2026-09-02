@@ -1,0 +1,63 @@
+\documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib,longbibliography,floatfix]{revtex4-2}
+\usepackage{amsmath,amssymb,bm,mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{physics}
+\usepackage{microtype}
+\usepackage{enumitem}
+\hypersetup{hidelinks}
+
+\newcommand{\Y}{\mathcal{Y}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\FT}{\mathcal{F}_{T}}
+\newcommand{\Ffull}{\mathcal{F}}
+\newcommand{\LCDM}{\Lambda\mathrm{CDM}}
+\newcommand{\mpl}{M_{\rm Pl}}
+
+\begin{document}
+
+\title{A Stable Single-Metric Relativistic Modified-Gravity Cosmology without Particle Cold Dark Matter or a Bare Cosmological Constant}
+
+\author{Panagiotis Karmiris}
+\email{unbinder@msn.com}
+\affiliation{Independent Researcher, Greece}
+
+\date{September 2, 2026}
+
+\begin{abstract}
+We construct and test a single-metric relativistic modified-gravity cosmology in which the particle cold-dark-matter density and the bare cosmological constant are set to zero. The theory combines an aether scalar--tensor sector with a Type-II minimally modified gravity constraint sector governing late-time acceleration. In the scalar--vector sector, the kinetic function is nonseparable, $\Ffull(\Y,\Q)=\FT(\Q)+\Y\Gamma(\Q)+J(\Y)$, with $\Gamma(\Q)$ fixed by the conserved homogeneous scalar current rather than introduced as a new fitted function. The mixed interaction vanishes on the homogeneous FLRW background and at the screened static point $\Q=\Q_0$, while converting the radiation-era scalar characteristic polynomial into a strictly Hurwitz form on the physical branch. The acceleration sector is auxiliary at the perturbative level and adds no new propagating scalar degree of freedom. We derive the scalar perturbation mapping implemented in CLASS and show that the direct scalar source contains an exact $K_Q-\Q F_{,\Y}=0$ cancellation. A nonlinear Hamiltonian analysis gives six physical degrees of freedom in the analyzed phase-space formulation. The propagating scalar has a minimum canonically normalized cubic derivative cutoff $\Lambda_{\rm sc}=1.4742\times10^{-6}\,{\rm eV}$ over the tested cosmological branch; the companion first-order scalar is governed by a nondegenerate second-class Dirac pair with an infrared-finite and ultraviolet-soft inverse. A fresh six-likelihood evaluation using Planck 2018 temperature and polarization data and lensing, DESI DR2 BAO, and Pantheon+ gives $\chi^2=2422.69597$, compared with $2428.9192$ for the matched optimized $\LCDM$ reference. For the stated parameter-count convention, $\Delta{\rm AIC}=-4.223$ and $\Delta{\rm BIC}=+1.557$. An independent profile in particle CDM places the exact zero-CDM realization at $\Delta\chi^2=0.958$ from the sampled profile minimum. Thus the tested data do not require a particle cold-dark-matter component, although they do not uniquely select zero particle CDM. The same scalar function retains the tested no-halo galactic limit because the new mixed operator vanishes in the relevant static screened configuration.
+\end{abstract}
+
+\maketitle
+
+\input{sections/01_introduction}
+\input{sections/02_theory}
+\input{sections/03_methods}
+\input{sections/04_results}
+\input{sections/05_discussion}
+\input{sections/06_conclusion}
+
+\begin{acknowledgments}
+The author declares no institutional affiliation and no specific external funding for this work. Public Planck, DESI, Pantheon+, SPARC, CLASS, and Cobaya resources were used as cited in the text.
+\end{acknowledgments}
+
+\section*{Artificial-intelligence assistance disclosure}
+Substantive artificial-intelligence assistance was provided by OpenAI ChatGPT (GPT-5.6 Sol) and Google Antigravity using Gemini 3.7 Flash (High reasoning) for algebraic cross-checking, code generation and debugging, workflow organization, literature organization, and manuscript language editing. All executable calculations reported in this article were run in the author's computing environment. The author reviewed the equations, source changes, numerical outputs, citations, and scientific claims and assumes full responsibility for the accuracy and integrity of the work.
+
+\section*{Data Availability Statement}
+The observational data used in this work are publicly available through the Planck, DESI, Pantheon+, and SPARC releases cited in this article. The modified CLASS source, exact optimized parameter file, analysis and validation scripts, figure-generation code, machine-readable likelihood summaries, and cryptographic reproducibility manifests are prepared for release at \url{https://github.com/KarmirisP/aest-nonseparable-cosmology}. The exact submitted release will also be deposited in a DOI-bearing archival repository; the DOI will be inserted here before final submission.
+
+\appendix
+\input{appendices/appA_action_variation}
+\input{appendices/appB_flrw_current}
+\input{appendices/appC_linear_perturbations}
+\input{appendices/appD_dirac}
+\input{appendices/appE_cutoff}
+\input{appendices/appF_class}
+\input{appendices/appG_likelihood}
+\input{appendices/appH_reproducibility}
+
+\bibliography{references}
+\end{document}

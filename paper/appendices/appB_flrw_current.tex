@@ -1,0 +1,24 @@
+\section{FLRW reduction and conserved current}\label{app:flrw}
+For a spatially homogeneous scalar, $\Y=0$. The shift-symmetric scalar equation integrates once to
+\begin{equation}
+I_0=a^3\Q F_{,\Y}.
+\label{eq:current}
+\end{equation}
+For Eq.~\eqref{eq:fullF},
+\begin{equation}
+I_0=2K_2Z_0a^3\sinh\left(\frac{\Q-\Q_0}{Z_0}\right).
+\end{equation}
+Defining $x_0\equiv I_0/(2K_2Z_0)$ yields the exact solution
+\begin{equation}
+\Q(a)=\Q_0+Z_0\operatorname{asinh}\left(\frac{x_0}{a^3}\right),
+\label{eq:Qa}
+\end{equation}
+and hence
+\begin{equation}
+I_0=2K_2Z_0x_0.
+\end{equation}
+The final implementation uses $K_2=7500$, $\Q_0=0.1$, $Z_0=10^{-9}$, $x_0=0.02672752$, and $I_0=4.009128\times10^{-7}$ in the solver convention.
+
+Because $\Y=0$ exactly, adding $\Y\Gamma(\Q)$ does not alter $\FT$, $\mathcal F_{T,\Q}$, or $\mathcal F_{T,\Q\Q}$ on FLRW. Numerical matched-background calculations confirmed equality to machine precision when only the mixed operator was removed. The late-time expansion sector is separately reconstructed through the auxiliary constraint potential, with flat closure recomputed from Eq.~\eqref{eq:vcdm-closure} at each likelihood point.
+
+A key numerical detail is that the identity $K_Q-\Q F_{,\Y}=0$ should not be formed by subtracting two large nearly equal floating-point quantities at small $a$. The final implementation imposes the analytic cancellation directly and audits Eq.~\eqref{eq:current} independently.

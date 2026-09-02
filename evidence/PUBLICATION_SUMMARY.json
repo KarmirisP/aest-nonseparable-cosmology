@@ -1,0 +1,67 @@
+{
+  "source_sha256": "1b76e97333efd654736519bf324976dba0906192f674f6d05e74f883f416c479",
+  "final_parameters": {
+    "H0": 68.3206477851295,
+    "omega_b": 0.02243860420421,
+    "omega_aest": 0.118813815536359,
+    "vcdm_s4": 0.34388729988365124,
+    "n_s": 0.9675229700698749,
+    "ln10As": 3.0398005871865967,
+    "tau_reio": 0.05408116436773863,
+    "A_s": 2.090107487735015e-09,
+    "Omega_vcdm_native": 0.6972944613049423,
+    "vcdm_s3": 1.891402037916349,
+    "omega_cdm": 0.0,
+    "Omega_Lambda": 0.0,
+    "Omega_fld": 0.0
+  },
+  "likelihood_components": {
+    "Planck high-l TTTEEE-lite": 582.1626605901529,
+    "Planck low-l TT": 22.975009388559783,
+    "Planck low-l EE": 395.9184456653594,
+    "Planck lensing": 8.967853541229642,
+    "DESI DR2 BAO": 8.640019714252032,
+    "Pantheon+": 1404.0319778266794
+  },
+  "chi2_theory": 2422.695966726233,
+  "chi2_lcdm": 2428.9192,
+  "delta_chi2_theory_lcdm": -6.223233273766709,
+  "delta_aic_theory_lcdm": -4.223233273766709,
+  "delta_bic_theory_lcdm": 1.5566518413033918,
+  "bic_effective_N": 2392,
+  "particle_cdm_profile": {
+    "sampled_minimum_omega_cdm": 0.001,
+    "zero_cdm_delta_chi2": 0.9581185850274778
+  },
+  "fast_scalar_cutoff_eV": 1.474236930936546e-06,
+  "fast_scalar_cutoff_a": 0.006441960984171227,
+  "dirac_ir_floor_Mpc_minus2": 6.01369200160712e-08,
+  "operator_ablation": {
+    "internal": 0.3268957173,
+    "E": 0.3268957173,
+    "chi": 0.2018230345,
+    "delta": 0.0007110991,
+    "theta": 0.0009873627,
+    "cmb_max_rel": 0.0070066268,
+    "pk_max_rel": 0.2176652278
+  },
+  "galaxy_static_test": {
+    "galaxies": 132,
+    "points": 2654,
+    "baryons_only_rms_dex": 0.5121,
+    "simple_if_rms_dex": 0.1312
+  },
+  "constraint_analysis": {
+    "phase_dimension": 42,
+    "first_class": 6,
+    "second_class": 18,
+    "physical_dof": 6.0,
+    "alpha1_screened": -4e-05,
+    "alpha2_screened": 0.0
+  },
+  "claim_limits": {
+    "no_sigma_from_raw_delta_chi2": true,
+    "zero_particle_cdm_not_uniquely_selected": true,
+    "fundamental_quantum_uv_completion_not_claimed": true
+  }
+}

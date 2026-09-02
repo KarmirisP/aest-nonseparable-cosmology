@@ -1,0 +1,11 @@
+name: manuscript
+on: [push, pull_request]
+jobs:
+  latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: aest_nonseparable_cosmology.tex
+          working_directory: paper

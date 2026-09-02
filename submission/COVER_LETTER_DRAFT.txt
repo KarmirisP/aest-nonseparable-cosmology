@@ -1,0 +1,16 @@
+Dear Editors of Physical Review D,
+
+Please consider the manuscript "A Stable Single-Metric Relativistic Modified-Gravity Cosmology without Particle Cold Dark Matter or a Bare Cosmological Constant" by Panagiotis Karmiris for publication as a Research Article in Physical Review D.
+
+The manuscript presents a single-metric relativistic cosmology combining an aether scalar--tensor sector with an auxiliary Type-II minimally modified gravity acceleration sector. Its principal theoretical result is a nonseparable scalar kinetic operator whose coefficient is fixed by the existing conserved scalar current rather than introduced as an additional fit function. The operator leaves the homogeneous scalar background and screened static MOND limit unchanged while enforcing strict damping in the radiation-era scalar system. The acceleration sector is nondynamical at the scalar perturbation level and adds no extra propagating scalar degree of freedom.
+
+The work includes an explicit perturbation derivation and CLASS implementation, nonlinear constraint analysis, canonical cubic effective-field-theory check, matched operator-removal ablation, and a fresh Planck 2018 + DESI DR2 + Pantheon+ likelihood analysis. The final zero-particle-CDM realization has chi-square 2422.69597 compared with 2428.9192 for the matched optimized LambdaCDM reference. We report both AIC and BIC and do not assign a Gaussian significance to the raw non-nested Delta chi-square. An independent particle-CDM profile places exact zero CDM within Delta chi-square < 1 of the sampled profile minimum; accordingly, the manuscript claims non-requirement rather than observational detection of zero particle CDM.
+
+The exact modified CLASS source, parameter file, figure-generation scripts, machine-readable numerical summaries, regression tests, and cryptographic manifests are prepared for public release in a DOI-bearing archive. The manuscript also discloses substantive artificial-intelligence assistance and the author's verification responsibilities.
+
+This manuscript is original, is not under consideration elsewhere, and the author takes full responsibility for all calculations and claims.
+
+Sincerely,
+Panagiotis Karmiris
+Independent Researcher, Greece
+unbinder@msn.com

@@ -1,0 +1,17 @@
+\section{CLASS implementation and numerical regression}\label{app:class}
+The publication source is identified by the SHA-256 of \texttt{source/perturbations.c},
+\begin{verbatim}
+1b76e97333efd654736519bf324976dba
+0906192f674f6d05e74f883f416c479
+\end{verbatim}
+The mixed-current helper quantities are evaluated from the exact background solution. In pseudocode,
+\begin{verbatim}
+x  = x0/a^3
+FY = 2*K2*Z0*x/Q
+QFY = 2*K2*Z0*x
+\end{verbatim}
+and the direct $(K_Q-\Q F_{,\Y})\chi$ contribution is set to analytic zero after an independent current-identity audit.
+
+The implementation tests require: (i) successful clean builds; (ii) exact homogeneous background equality when the mixed operator alone is removed; (iii) finite CMB and matter spectra; (iv) source-diff locality; and (v) a nonzero physical spectral response to the matched operator-removal test. Radiation-era histories for $E_{\rm aest}$, $\chi_{\rm aest}$, $\delta_{\rm aest}$, and $\theta_{\rm aest}$ were checked across twelve histories and eight expected horizon crossings. Supported transfer outputs at redshifts $0,1,10,100,1000$ were finite and bounded. The claim does not extend high-redshift total-matter transfer certification beyond the gauge-invariant outputs actually exposed by the solver interface.
+
+The public repository preserves the source tree byte-for-byte so the hash above can be checked independently. Development-era comments inside the frozen source may contain historical local labels; these comments are not scientific nomenclature and are intentionally not edited after the source freeze because doing so would destroy byte-level reproducibility.

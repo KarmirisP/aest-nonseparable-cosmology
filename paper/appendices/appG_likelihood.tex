@@ -1,0 +1,25 @@
+\section{Likelihood implementation, optimization, and information criteria}\label{app:likelihood}
+The final likelihood stack was evaluated with a frozen Python environment using NumPy 1.26.4, Cobaya \cite{TorradoLewis2021}, and the same external likelihood package directory for all matched comparisons. The likelihoods were Planck 2018 high-$\ell$ TTTEEE-lite, low-$\ell$ TT, low-$\ell$ EE, Planck lensing, DESI DR2 BAO, and Pantheon+.
+
+The seven-dimensional fit varied $H_0$, $\omega_b$, $\omega_{\rm aest}$, $s_4$, $n_s$, $\ln(10^{10}A_s)$, and $\tau_{\rm reio}$. The scalar kinetic parameters were fixed before the fit, and $\omega_{\rm cdm}=\Omega_\Lambda=\Omega_{\rm fld}=0$ was enforced exactly. The dependent acceleration-basis coefficient and flat closure density were recomputed at every trial point.
+
+The final optimized coordinates are
+\begin{align}
+H_0&=68.3206477851\ \mathrm{km\,s^{-1}\,Mpc^{-1}},\\
+\omega_b&=0.02243860420,\\
+\omega_{\rm aest}&=0.11881381554,\\
+s_4&=0.34388729988,\\
+n_s&=0.96752297007,\\
+\ln(10^{10}A_s)&=3.03980058719,\\
+\tau_{\rm reio}&=0.05408116437.
+\end{align}
+The corresponding $A_s=2.090107487735015\times10^{-9}$, $\Omega_V=0.6972944613049423$, and dependent coefficient $s_3=1.891402037916349$.
+
+The initial scaled Nelder--Mead search reached its function-evaluation ceiling after locating a stable best point. Convergence was therefore certified independently: the exact best INI was replayed byte-for-byte; multiple evaluator labels gave identical totals; the point was polished with smaller deterministic coordinate steps; a fresh replay was identical at the reported numerical precision; and symmetric final displacements found no material downhill coordinate direction within the stated tolerance.
+
+The information criteria are
+\begin{equation}
+\mathrm{AIC}=\chi^2+2k,\qquad
+\mathrm{BIC}=\chi^2+k\ln N.
+\end{equation}
+We use $k_{\rm MG}=7$, $k_{\LCDM}=6$, and the matched-analysis convention $N=2392$. Because the likelihood is a combination of correlated data products, this $N$ is explicitly stated rather than presented as a unique universal definition of an effective BIC sample size \cite{Liddle2007}.

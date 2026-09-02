@@ -1,0 +1,21 @@
+\section{Action, conventions, and scalar derivatives}\label{app:action}
+We use metric signature $(-,+,+,+)$ and the definitions of Sec.~\ref{sec:theory}. The scalar--vector action is Eq.~\eqref{eq:aest-action}, with the nonseparable function Eq.~\eqref{eq:fullF}. On the homogeneous branch $\Y=0$,
+\begin{align}
+F_{,\Y}&=\Gamma(\Q),\\
+F_{,\Y\Q}&=\Gamma_{,\Q},\\
+F_{,\Q}&=\mathcal F_{T,\Q},\\
+F_{,\Q\Q}&=\mathcal F_{T,\Q\Q}.
+\end{align}
+At the static screened point $\Q=\Q_0$,
+\begin{equation}
+\Gamma(\Q_0)=0,
+\end{equation}
+while $F_{,\Y\Q}$ need not vanish. Since $\Y$ is quadratic in spatial scalar gradients, the first nonzero mixed $F_{,\Y\Q}$ contribution is cubic in perturbations, explaining why the new coefficient enters the cubic cutoff calculation but not as an independent direct quadratic source.
+
+For completeness, varying the Type-II auxiliary multiplier in Eq.~\eqref{eq:vcdm-aux} gives
+\begin{equation}
+-\frac32\lambda_C-(K+\varphi_V)=0,
+\end{equation}
+which yields the reduced term Eq.~\eqref{eq:vcdm-red}. In the scalar perturbation sector at nonzero wavenumber, the auxiliary equations set $\delta\varphi_V=0$ and fix the associated multipliers algebraically. Thus the acceleration sector alters the constraint equations and background reconstruction without adding a local scalar oscillator. This is the same degree-of-freedom property that characterizes VCDM in the Type-II minimally modified gravity literature \cite{DeFeliceMaedaMukohyamaPookkillath2022,GanzMartensMukohyamaNamba2023}.
+
+The full scalar Euler--Lagrange equation follows from the shift symmetry. Writing the scalar contribution as $\sqrt{-g}\,L(\nabla\phi,A,g)$, it takes current-conservation form $\nabla_\mu \mathcal J^\mu_\phi=0$, where the timelike projection contains $F_{,\Q}$ and the projected spatial part contains $F_{,\Y}q^{\mu\nu}\nabla_\nu\phi$. In FLRW the spatial contribution vanishes identically, leaving the conserved quantity derived in Appendix~\ref{app:flrw}. This derivation is also the reason $\Gamma(\Q)$ cannot be adjusted independently once the current solution and temporal function are fixed.

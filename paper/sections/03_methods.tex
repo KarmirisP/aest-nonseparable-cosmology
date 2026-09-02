@@ -1,0 +1,39 @@
+\section{Methodology and validation protocol}\label{sec:methods}
+A central methodological choice was to separate theory construction from statistical optimization. The scalar kinetic structure, constraint analysis, perturbation equations, and stability conditions were fixed before the final likelihood parameters were optimized. The numerical source used for the final fit was then frozen by SHA-256, so likelihood improvement could not feed back into the field equations.
+
+\subsection{Analytic background and current checks}
+The FLRW scalar current was derived directly from the action and the exact closed-form solution for $\Q(a)$ was checked symbolically and numerically. The nonseparable and separable-control implementations were required to agree at the homogeneous scalar-background level because $\Y=0$ on FLRW. The particle-CDM density, bare cosmological constant, and auxiliary dark-energy-fluid density were fixed to zero in the final realization.
+
+\subsection{Quadratic perturbation derivation}
+The mixed operator was expanded to quadratic order about FLRW before any CLASS source change was made. The derivation was performed first in field variables and then mapped to the physical scalar combination $\chi$ used by the solver. A separate order-counting check established that $F_{,\Y\Q}$ first contributes as a cubic interaction rather than a new direct quadratic source. The exact identity $K_Q=\Q F_{,\Y}$ was imposed analytically in the final evolution equation; it was not evaluated by subtracting two nearly equal floating-point quantities at early times.
+
+\subsection{Constraint and stability analysis}
+The combined gravity/scalar/vector/auxiliary system was analyzed with a Dirac--Bergmann constraint classification. First-class null directions and the rank of the second-class block were checked independently. The Type-II acceleration sector was also reduced by explicit elimination of its auxiliary variables, confirming that it contributes no additional propagating scalar mode. The nonseparable scalar operator adds neither a configuration field nor a higher-time-derivative term.
+
+The radiation-era reduced system was required to have a strictly Hurwitz characteristic polynomial on the physical branch. Separately, the propagating scalar was canonically normalized through cubic order, including the temporal, mixed, and MOND vertices. The remaining first-order scalar was treated through its reduced symplectic/Dirac structure, not by assigning it an artificial second-order kinetic eigenvalue.
+
+\subsection{Boltzmann-code implementation and numerical regression}
+The derived equations were implemented in CLASS \cite{Lesgourgues2011CLASS,Blas2011CLASS}. A matched control implementation differed only by removal of the nonseparable mixed-current contribution in the direct scalar source. Both implementations used identical homogeneous parameters, initial conditions, compilation settings, and output requests. The complete theory was required to produce finite bounded internal histories, finite CMB spectra through $\ell=2500$, finite positive linear matter spectra over the tested range, and the expected horizon-crossing behavior before likelihood evaluation.
+
+The matched operator-removal test is an ablation, not a second phenomenological model fit. Its purpose is causal: it quantifies the response produced by the nonseparable operator while keeping the background fixed. This also checks that the operator is not observationally inert or merely a background reparameterization.
+
+\subsection{Likelihoods and optimization}
+The final likelihood stack consists of Planck 2018 high-$\ell$ TTTEEE-lite, Planck low-$\ell$ TT, Planck low-$\ell$ EE, Planck lensing, DESI DR2 BAO \cite{DESIDR2II2025}, and Pantheon+ supernovae \cite{Brout2022,Scolnic2022}. Likelihood evaluation used Cobaya \cite{TorradoLewis2021} in a frozen Python environment with NumPy 1.26.4 and a fixed external-likelihood package tree.
+
+Seven coordinates were optimized,
+\begin{equation}
+\{H_0,\omega_b,\omega_{\rm aest},s_4,n_s,\ln(10^{10}A_s),\tau_{\rm reio}\}.
+\end{equation}
+At every trial point, flat closure $\Omega_V$ and the dependent acceleration-basis coefficient were recomputed rather than held at values inherited from the initial point. The exact best INI file was independently replayed, tested for evaluator-label invariance, locally polished, and subjected to symmetric positive/negative coordinate displacements. This provided a local stationarity certificate after the initial simplex optimizer reached its function-evaluation ceiling.
+
+\subsection{Independent particle-CDM profile}
+To distinguish a theoretically imposed zero-CDM realization from a data-driven preference, a separate analysis promoted $\omega_{\rm cdm}$ to a profile coordinate. At each fixed $\omega_{\rm cdm}$ value, $\omega_{\rm aest}$ and the cosmological fit coordinates were reoptimized independently. The conclusion drawn from this profile is deliberately limited: it tests whether a nonzero particle-CDM density is required by the selected likelihoods, not whether the observations uniquely select $\omega_{\rm cdm}=0$.
+
+\subsection{Galactic validation and provenance}
+The static galactic test uses the same $J(\Y)$ function as the cosmological theory. Because $\Gamma(\Q_0)=0$ in the screened static configuration, the nonseparable operator does not alter that test. The retained galaxy sample contains 132 SPARC systems and 2654 rotation-curve points, with no fitted particle-dark-matter halo parameters. The publication archive stores the machine-readable summary and provenance of this calculation rather than rerunning it during manuscript compilation \cite{LelliMcGaughSchombert2016}.
+
+\subsection{AI-assisted research workflow and human verification}
+Substantive AI assistance was used during parts of the research workflow. OpenAI ChatGPT (GPT-5.6 Sol) and Google Antigravity using Gemini 3.7 Flash (High reasoning) assisted with algebraic cross-checking, code generation and debugging, workflow organization, literature organization, and manuscript drafting. AI output was never treated as numerical evidence by itself: executable calculations were run in the author's local environments; proposed source changes were inspected before acceptance; analytic identities were checked symbolically or against independent numerical evaluations; final likelihood totals were replayed from frozen parameter files; and publication claims were checked against the retained source-of-truth artifacts and cited literature. The author performed the final scientific review and assumes responsibility for the calculations and conclusions.
+
+\subsection{Reproducibility discipline}
+Transient compiler trees and exploratory intermediate files were excluded from the public release. The retained publication record consists of source-of-truth equations, the exact optimized parameter file, machine-readable results, source hashes, figure-generation code, environment information, and regression scripts. The final CLASS perturbation source is identified by a cryptographic hash given in Appendix~\ref{app:repro}. This separation keeps the public repository testable without requiring readers to understand the internal development history.

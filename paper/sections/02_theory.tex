@@ -1,0 +1,85 @@
+\section{Single-metric relativistic theory}\label{sec:theory}
+\subsection{Aether scalar--tensor sector}
+Ordinary matter couples minimally and universally to one physical metric $g_{\mu\nu}$. Let $A^\mu$ be a unit timelike vector, $A^\mu A_\mu=-1$, and $\phi$ a shift-symmetric scalar. Define
+\begin{align}
+F_{\mu\nu}&=2\nabla_{[\mu}A_{\nu]},&
+J^\mu&=A^\nu\nabla_\nu A^\mu,\\
+q_{\mu\nu}&=g_{\mu\nu}+A_\mu A_\nu,&
+\Q&=A^\mu\nabla_\mu\phi,\\
+\Y&=q^{\mu\nu}\nabla_\mu\phi\nabla_\nu\phi.
+\end{align}
+The covariant scalar--vector sector is the AeST action \cite{SkordisZlosnik2021,SkordisZlosnik2022,BatakiSkordisZlosnik2024}, with bare cosmological constant fixed to zero,
+\begin{widetext}
+\begin{align}
+S_{\rm AeST}=&\frac{1}{16\pi\widetilde G}\int d^4x\sqrt{-g}\Big\{R-\frac{K_B}{2}F_{\mu\nu}F^{\mu\nu}
+ +(2-K_B)\left(2J^\mu\nabla_\mu\phi-\Y\right)
+-\Ffull(\Y,\Q)-\lambda(A^\mu A_\mu+1)\Big\}
++S_m[g_{\mu\nu},\psi_m].
+\label{eq:aest-action}
+\end{align}
+\end{widetext}
+No disformal matter metric is introduced.
+
+\subsection{Nonseparable scalar kinetic function}
+The scalar free function is
+\begin{equation}
+\Ffull(\Y,\Q)=\FT(\Q)+\Y\Gamma(\Q)+J(\Y),
+\label{eq:fullF}
+\end{equation}
+where
+\begin{equation}
+\FT(\Q)=-4K_2Z_0^2\left[\cosh\left(\frac{\Q-\Q_0}{Z_0}\right)-1\right],
+\label{eq:FT}
+\end{equation}
+\begin{equation}
+\Gamma(\Q)=\frac{2K_2Z_0}{\Q}\sinh\left(\frac{\Q-\Q_0}{Z_0}\right),
+\label{eq:Gamma}
+\end{equation}
+and the static galactic function is
+\begin{align}
+J(\Y)=&\frac{a_0^2(2-K_B)}{\beta_0^3}\Bigg[-\frac{2\sqrt{\Y}\beta_0(\beta_0+1)}{a_0}
++\frac{\Y\beta_0^2}{a_0^2}\nonumber\\
+&+2(\beta_0+1)^2\ln\left(1+\frac{\sqrt{\Y}\beta_0}{a_0(\beta_0+1)}\right)\Bigg].
+\label{eq:JY}
+\end{align}
+The relevant temporal derivatives are
+\begin{align}
+\mathcal{F}_{T,\Q}&=-4K_2Z_0\sinh\left(\frac{\Q-\Q_0}{Z_0}\right),\\
+\mathcal{F}_{T,\Q\Q}&=-4K_2\cosh\left(\frac{\Q-\Q_0}{Z_0}\right),\\
+\mathcal{F}_{T,\Q\Q\Q}&=-\frac{4K_2}{Z_0}\sinh\left(\frac{\Q-\Q_0}{Z_0}\right),
+\end{align}
+and
+\begin{align}
+\Gamma_{,\Q}=\frac{2K_2}{\Q^2}\Bigg\{&\Q\cosh\left(\frac{\Q-\Q_0}{Z_0}\right)\nonumber\\
+&-Z_0\sinh\left(\frac{\Q-\Q_0}{Z_0}\right)\Bigg\}.
+\label{eq:GammaQ}
+\end{align}
+The essential minimality property is that $\Gamma$ is fixed by the homogeneous current, not independently fitted. Removing the mixed term provides a separable control theory; no additional field or continuous parameter is required to pass from that control to Eq.~\eqref{eq:fullF}.
+
+\subsection{Auxiliary acceleration sector}
+Late-time acceleration is supplied by a Type-II minimally modified gravity sector of the VCDM class \cite{DeFeliceMukohyamaPookkillath2021,DeFeliceMaedaMukohyamaPookkillath2022,GanzMartensMukohyamaNamba2023,AkarsuEtAl2024VCDM}. In ADM variables, the part relevant for the auxiliary scalar $\varphi_V$ and its constraint multiplier can be written, up to the standard Einstein--Hilbert ADM contribution and gauge-fixing term, as
+\begin{align}
+S_V=\mpl^2\!\int dt\,d^3x\,N\sqrt{\gamma}\Big[&-V(\varphi_V)-\frac34\lambda_C^2\nonumber\\
+&-\lambda_C(K+\varphi_V)-\mathcal L_{\rm gf}\Big].
+\label{eq:vcdm-aux}
+\end{align}
+Varying $\lambda_C$ gives
+\begin{equation}
+\lambda_C=-\frac23(K+\varphi_V),
+\end{equation}
+so the reduced deformation is
+\begin{equation}
+\mathcal L_{V,\rm red}=\mpl^2\left[\frac{(K+\varphi_V)^2}{3}-V(\varphi_V)-\mathcal L_{\rm gf}\right].
+\label{eq:vcdm-red}
+\end{equation}
+For generic scalar perturbations with $k\neq0$, the auxiliary equations enforce $\delta\varphi_V=0$ together with the corresponding multiplier constraints; after Schur elimination this sector adds no propagating scalar degree of freedom. This is the key reason it can alter the background acceleration history without introducing a dark-energy fluid or an extra scalar wave mode \cite{DeFeliceMaedaMukohyamaPookkillath2022}.
+
+In the numerical background parameterization, the reconstructed acceleration history is represented by a fourth-order basis with coefficients $s_1,\ldots,s_4$ and present closure density $\Omega_{V}$. Flat closure is recomputed at every likelihood point,
+\begin{equation}
+\Omega_V=1-\frac{\omega_b+\omega_{\rm aest}+\omega_r}{h^2},
+\label{eq:vcdm-closure}
+\end{equation}
+for the zero-particle-CDM realization, while one dependent polynomial coefficient is fixed by the basis normalization. The final fit varies only one independent shape coefficient, $s_4$, from this acceleration sector.
+
+\subsection{Regime separation}
+The construction assigns distinct roles to distinct operators. The temporal scalar sector determines the homogeneous effective cold component; $J(\Y)$ determines the quasistatic MOND response; the mixed-current operator controls the radiation-era scalar gradient structure; and the auxiliary Type-II constraint sector supplies the reconstructed late-time acceleration. This separation is used throughout the validation to avoid attributing a successful observable to an unnecessarily complicated sector.

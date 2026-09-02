@@ -1,0 +1,46 @@
+MODEL184 B4C1C CERTIFIED R2 CLASS SOURCE
+
+CREATED=2026-09-02T11:51:49+03:00
+
+PARENT=/home/unbinder/src/class_model184_sa4_final
+B4C1B1=/home/unbinder/mcv2_theory_runs/zero_cdm_program/MODEL184_B4C1B1_FULL_FLRW_MAPPING_20260902T112729
+EVIDENCE=/home/unbinder/mcv2_theory_runs/zero_cdm_program/MODEL184_B4C1C_MINIMAL_CLASS_IMPLEMENTATION_20260902T113810
+
+AUTHORIZED SOURCE CHANGE:
+source/perturbations.c only
+
+R2 LINEAR DYNAMICS:
+
+FY =
+2 K2 Z0 (x0/a^3) / Q
+
+Q FY =
+KQ =
+I0/a^3
+
+Generic E source:
+(KQ-Q FY) chi
+
+Exact R2 E source:
+0
+
+The exact cancellation is imposed analytically rather than by
+subtracting two large floating-point quantities.
+
+Runtime audit:
+relative |KQ-QFY| <= 5e-10
+
+Unchanged:
+aest_comb
+Pi_aest
+delta_aest
+theta_aest
+chi_aest
+background
+native VCDM closure
+
+omega_cdm = 0
+Omega_Lambda = 0
+Omega_fld = 0
+
+No new continuous parameter.
