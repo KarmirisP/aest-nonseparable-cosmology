@@ -1,0 +1,29 @@
+Frozen host: DAWN
+Freeze date: 2026-09-05T07:25:36+03:00
+
+Python: 3.12.3
+NumPy: 1.26.4
+pandas: 2.2.3
+Astropy: 7.1.0
+Cobaya: 3.5.7
+Cython: 3.3.0
+mpi4py: 4.1.2
+GetDist: 1.7.7
+CLASS wrapper/version line: modified hi_class/CLASS v3.2.3 family
+Planck clik runtime observed: clik_16.0b1-12-gcde855c6debd
+
+Cobaya CLASS path contract: repository CLASS root (./src/class)
+Cobaya ignore_obsolete: true
+Baseline non-linear correction: none
+P_k_max_h/Mpc in baseline likelihood YAML: ABSENT
+MPI publication run: 4 ranks, one thread per rank
+Convergence target: Rminus1_stop = 0.01
+
+classy.pyx SHA256:
+489592b2df959321fff777385d86101b1cf2340380ada609a3264ad453b1a174
+
+cclassy.pxd SHA256:
+4e2d593f8a853690764f86406f0c3154500a3b281d5de7157e60b1067605dca6
+
+External likelihood/data packages are not redistributed in this repository.
+They must be installed/mounted separately under COBAYA_PACKAGES_PATH.

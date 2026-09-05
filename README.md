@@ -60,3 +60,9 @@ python3 tests/test_publication_manifest.py
 
 This verifies the frozen statistical locks and, when `src/class/` is present,
 the certified perturbation-source SHA-256.
+
+## End-to-end computational reproduction
+
+For the verified CLASS/Cobaya build, exact DAWN package freeze, external
+likelihood installation, four-rank smoke test, Docker and Apptainer workflows,
+see [REPRODUCIBILITY.md](REPRODUCIBILITY.md).

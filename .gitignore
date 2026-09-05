@@ -10,3 +10,14 @@ __pycache__/
 *.pyc
 runtime/
 private/
+
+# Publication reproducibility build/runtime artifacts
+.venv-publication/
+external/
+chains/
+src/class/build/
+src/class/libclass.a
+src/class/python/build/
+src/class/python/classy.cpp
+src/class/python/classy*.so
+src/class/python/__pycache__/
