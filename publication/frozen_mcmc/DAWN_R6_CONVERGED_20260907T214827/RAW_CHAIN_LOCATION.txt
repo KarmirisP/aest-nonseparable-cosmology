@@ -1,0 +1,11 @@
+Raw chain files are not stored in Git.
+
+Authoritative frozen DAWN location:
+
+/home/unbinder/mcv2_theory_runs/zero_cdm_program/AEST_NONSEPARABLE_PUBLICATION_MCMC_DAWN4_EXPLICIT_CLOSURE_R6
+
+Freeze timestamp:
+20260907T214827
+
+The chain SHA256 values in this directory uniquely identify
+the raw publication chains.

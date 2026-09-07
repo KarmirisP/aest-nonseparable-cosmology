@@ -1,0 +1,5 @@
+   24022 /home/unbinder/mcv2_theory_runs/zero_cdm_program/AEST_NONSEPARABLE_PUBLICATION_MCMC_DAWN4_EXPLICIT_CLOSURE_R6/chains.1.txt
+   24371 /home/unbinder/mcv2_theory_runs/zero_cdm_program/AEST_NONSEPARABLE_PUBLICATION_MCMC_DAWN4_EXPLICIT_CLOSURE_R6/chains.2.txt
+   24001 /home/unbinder/mcv2_theory_runs/zero_cdm_program/AEST_NONSEPARABLE_PUBLICATION_MCMC_DAWN4_EXPLICIT_CLOSURE_R6/chains.3.txt
+   24568 /home/unbinder/mcv2_theory_runs/zero_cdm_program/AEST_NONSEPARABLE_PUBLICATION_MCMC_DAWN4_EXPLICIT_CLOSURE_R6/chains.4.txt
+   96962 total
