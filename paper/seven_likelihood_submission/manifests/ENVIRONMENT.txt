@@ -1,0 +1,12 @@
+DATE=2026-09-13T17:23:26+03:00
+HOST=DAWN
+UNAME=Linux DAWN 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+PYTHON=Python 3.12.3
+GIT=git version 2.43.0
+LATEXMK=
+PDFLATEX=
+
+SOURCE_BUNDLE=/mnt/c/Users/unbinder/Downloads/aest_7like_tex_bib_graphics_and_release_script.zip
+SOURCE_BUNDLE_SHA256=73eb7078dab0383e3dcf8d5f8e5afc7d28bd07c0bdb64a221fd19c8ca607750d
+GIT_REPOSITORY=/home/unbinder/projects/aest-nonseparable-cosmology
+GIT_REMOTE=https://github.com/KarmirisP/aest-nonseparable-cosmology.git
