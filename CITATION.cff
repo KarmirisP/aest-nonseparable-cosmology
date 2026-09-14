@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the archived Zenodo release."
-title: "AeST Nonseparable Cosmology"
+message: "If you use this software or reproducibility package, please cite the archived Zenodo release."
+title: "AeST Nonseparable Cosmology: Revised Seven-Likelihood Reproducibility Package"
 type: software
 
 authors:
@@ -10,24 +10,29 @@ authors:
     email: "unbinder@msn.com"
     orcid: "https://orcid.org/0009-0007-7536-1467"
 
-version: "1.0.2"
-doi: "10.5281/zenodo.22260419"
-date-released: 2026-09-02
+version: "2026.09.14-seven-likelihood-revised"
+date-released: 2026-09-14
 
 repository-code: "https://github.com/KarmirisP/aest-nonseparable-cosmology"
 url: "https://github.com/KarmirisP/aest-nonseparable-cosmology"
 
 abstract: >
   Reproducibility software, modified CLASS implementation, numerical
-  configuration, publication figures, and validation evidence accompanying
-  the manuscript "A Stable Single-Metric Relativistic Modified-Gravity
-  Cosmology without Particle Cold Dark Matter or a Bare Cosmological Constant."
+  configuration, publication figures, validation evidence, and manuscript
+  materials for the revised matched seven-likelihood analysis of the cyclic,
+  nonlinear zero-particle-CDM single-metric relativistic modified-gravity
+  cosmology. The matched comparison uses Planck 2018 high-l TTTEEE-lite,
+  low-l TT, low-l EE, Planck lensing, DESI DR2 BAO, Pantheon+, and SH0ES.
 
 keywords:
   - modified gravity
   - cosmology
   - AeST
+  - cyclic cosmology
+  - nonlinear gravity
+  - zero-particle-CDM
   - CLASS
-  - MOND
-  - dark matter
-  - dark energy
+  - DESI DR2
+  - Planck
+  - Pantheon+
+  - SH0ES

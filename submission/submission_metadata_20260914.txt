@@ -1,0 +1,22 @@
+Journal target: Physical Review D
+
+Title:
+A Matched Seven-Likelihood Test of a Zero-Particle-CDM Single-Metric Relativistic Modified-Gravity Cosmology
+
+Author:
+Panagiotis Karmiris
+Independent Researcher, Greece
+ORCID: 0009-0007-7536-1467
+Email: unbinder@msn.com
+
+Suggested keywords:
+modified gravity; aether scalar-tensor gravity (AeST); cosmology; dark matter alternatives; zero-particle-CDM cosmology; cosmic microwave background; baryon acoustic oscillations; DESI; Hubble constant; cosmological model comparison
+
+Repository:
+https://github.com/KarmirisP/aest-nonseparable-cosmology
+
+Primary manuscript source: manuscript.tex
+Bibliography: references.bib
+Figures: figures/
+Compiled manuscript: manuscript.pdf
+Cover letter: cover_letter.pdf and cover_letter.tex
