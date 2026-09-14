@@ -12,6 +12,7 @@ authors:
 
 version: "2026.09.14-seven-likelihood-revised"
 date-released: 2026-09-14
+doi: "10.5281/zenodo.22747594"
 
 repository-code: "https://github.com/KarmirisP/aest-nonseparable-cosmology"
 url: "https://github.com/KarmirisP/aest-nonseparable-cosmology"
